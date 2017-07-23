@@ -1,0 +1,186 @@
+---
+layout: post
+title: 'Big Data'
+date: 2017-07-22 07:30:34 +0300
+categories: blog development
+tags: cats dogs code
+custom_var: 'meow meow meow'
+---
+{% for post in paginator.posts %}
+    {% include tile.html %}
+{% endfor %}
+<h1>1. Introduction</h1>
+There is little doubt that the quantities of data now available are indeed large, but that’s not the most relevant characteristic of this new data ecosystem. Analysis of data sets can find new correlations to spot business trends, prevent diseases, combat crime and so on. Scientists, business executives, practitioners of medicine, advertising and governments alike regularly meet difficulties with large data-sets in areas including Internet search, fintech, urban informatics, and business informatics. Scientists encounter limitations in e-Science work, including meteorology, genomics, connectomics, complex physics simulations, biology and environmental research.
+
+<p>Big data is a term for data sets that are so large or complex that traditional data processing application software is inadequate to deal with them. 
+Challenges include capture, storage, analysis, data curation, search, sharing, transfer, visualization, querying, updating and information privacy.</p>
+
+<p>Big Data as we know is the next “Big Bang” in the IT world; the term has been in use since the 1990s, with some giving credit to John Mashey for coining or at least making it popular. Big data usually includes data sets with sizes beyond the ability of commonly used software tools to capture, curate, manage, and process data within a tolerable elapsed time. Big Data philosophy encompasses unstructured, semi-structured and structured data, however the main focus is on unstructured data.  Big data "size" is a constantly moving target, as of 2012 ranging from a few dozen terabytes to many petabytes of data. Big data requires a set of techniques and technologies with new forms of integration to reveal insights from datasets that are diverse, complex, and of a massive scale.
+The first organizations to embrace Big Data were online and startup firms. Firms like Google, eBay, Amazon, Facebook, LinkedIn were built around Big Data from the beginning</p>
+
+<p>The main drive to Big Data are the benefits that organizations want to achieve such as dramatic cost reductions, substantial improvements in the time required to perform a computing task or new product and service offerings.</p>
+ 
+
+<h1> 2.	Defininition of Big Data</h1>
+The term "big data" often refers simply to the use of predictive analytics, user behavior analytics, or certain other advanced data analytics methods that extract value from data, and seldom to a particular size of data set.
+
+<h1>3.	Characteristics of Big Data</h1>
+Big data can be described by the following characteristics:
+<OL>
+<LI>Volume - the quantity of generated and stored data. The size of the data determines the value and potential insight- and whether it can actually be considered big data or not.</LI>
+<LI>Variety - the type and nature of the data. This helps people who analyze it to effectively use the resulting insight.</LI>
+<LI>Velocity - in this context, the speed at which the data is generated and processed to meet the demands and challenges that lie in the path of growth and development.</LI>
+<LI>Variability - inconsistency of the data set can hamper processes to handle and manage it.</LI>
+<LI>Verocity - the quality of captured data can vary greatly, affecting the accurate analysis.</LI>
+</OL>
+
+<h1>4. Big Data Sources</h1>
+<p>Big data sources are repositories of large volumes of data. Using business intelligence applications like Logi Info, users can quickly connect to and derive value from these sources. This brings more information to users’ applications without requiring that the data be held in a single repository or cloud vendor proprietary data store.</p>
+
+<p>Examples of big data sources are Amazon Redshift, HP Vertica, and MongoDB. Emerging big data sources – such as analytic/columnar data stores, NoSQL, and Hadoop data repositories – expect to each more than double their rate of adoption and eventually exceed well over 40 percent availability in self-service tools within two years, according to Logi’s 2015 State of Self-Service BI Report.</p>
+
+<h1>5.	Tools used in big data</h1>
+<p>These are tools that are used in the mining and analysis of data</p>
+
+<h3>a.	Hadoop</h3>
+<p>The Apache distributed data processing software is so pervasive that sometimes the terms "Hadoop" and "big data" get used synonymously. Hadoop is known for the ability to process extremely large data in both structured and unstructured formats reliably replicating chunks of data to nodes in the cluster and making it available locally on the processing machine.</p>
+
+<h3>b.	MapReduce</h3>
+<p>MapReduce is a framework for processing parallelizable problems across large datasets using a large number of computers (nodes), collectively referred to as a cluster (if all nodes are on the same local network and use similar hardware) or a grid (if the nodes are shared across geographically and administratively distributed systems, and use more heterogenous hardware). Processing can occur on data stored either in a filesystem (unstructured) or in a database(structured). MapReduce can take advantage of the locality of data, processing it near the place it is stored in order to minimize communication overhead.</p>
+<ul>
+<li>"Map" step: Each worker node applies the "map()" function to the local data, and writes the output to a temporary storage. A master node ensures that only one copy of redundant input data is processed.</li>
+<li>"Shuffle" step: Worker nodes redistribute data based on the output keys (produced by the "map()" function), such that all data belonging to one key is located on the same worker node.</li>
+<li>"Reduce" step: Worker nodes now process each group of output data, per key, in parallel.</li>
+</ul>
+
+<h3>c.	GridGain</h3>
+<p>GridGain is a Java based middleware for faster in-memory processing of Big Data in real time and is compatible with the Hadoop Distributed File System</p>
+
+<h3>d.	HPCC Systems</h3>
+<p>Developed by LexisNexis Risk Solutions, HPCC is short for "high performance computing cluster". HPCC Systems delivers on a single platform, a single architecture and a single programming language for data processing </p>
+
+<h3>e.	Storm</h3>
+<p>Storm differs from other tools with it’s distributed, real-time, fault-tolerant processing system, unlike batch processing systems of Hadoop. Real-time computation capabilities, it is fast and highly scalable, often being described as the "Hadoop of real-time". It is also Fault-tolerant and works with nearly all programming languages, though typically Java is used</p>
+
+<h3>f.	HBase</h3>
+<p>HBase is the non-relational data store for Hadoop. Being a column-oriented database management system, HBase is well suited for sparse data sets and is written in Java.
+Features include: 
+</p>
+<ul>
+<li>Linear and modular scalability</li>
+<li>Strictly consistent reads and writes</li>
+<li>Automatic failover support and much more</li>
+</ul>
+
+<h3>g.	MongoDB</h3>
+<p>MongoDB was originally developed by 10gen designed to support humongous databases. It's a NoSQL database written in C++ with document-oriented storage, full index support, replication and high availability and scales horizontally without compromising functionality</p>
+
+<h3>h.	Neo4j</h3>
+<p>Neo4j boasts performance improvements of up to 1000x or more versus relational databases. Stores data structured in graphs instead of tables and is a disk-based, fully transactional Java engine. Organizations can purchase advanced and enterprise versions from Neo Technology</p>
+
+<h3>i.	CouchDB</h3>
+<p>CouchDB stores data in JSON documents that can be accessed via the web or query using JavaScript. 
+Key featured include: </p>
+<ul>
+<li>On-the-fly document transformation</li>
+<li>Real-time change notifications</li>
+<li>Easy-to-use web administration console</li>
+</ul>
+
+<h1>6.	Application of big data</h1>
+<p>The applications of big data are vast; the most popular being in:</p>
+<ul>
+<li>Government - the use and adoption of big data within governmental processes allows efficiencies in terms of cost, productivity, and innovation, but does not come without its flaws.</li>
+<li>Manufacturing - Big data provides an infrastructure for transparency in manufacturing industry, which is the ability to unravel uncertainties such as inconsistent component performance and availability.</li>
+<li>Cyber physics models - there is a need to systematically integrate, manage and analyze machinery or process data during different stages of machine life cycle to handle data/information more efficiently and further achieve better transparency of machine health condition for the manufacturing industry.</li>
+<li>Health care - Big data analytics has helped healthcare improve by providing personalized medicine and prescriptive analytics, clinical risk intervention and predictive analytics, waste and care variability reduction, automated external and internal reporting of patient data, standardized medical terms and patient registries and fragmented point solutions.</li>
+<li>Education</li>
+<li>Media - this industry appears to be moving away from the traditional approach of using specific media environments such as newspapers, magazines, or television shows and instead taps into consumers with technologies that reach targeted people at optimal times in optimal locations. The ultimate aim is to serve or convey, a message or content that is (statistically speaking) in line with the consumer's mindset.</li>
+</ul>
+
+<h1>7.	Risks of big data</h1>
+<h3>Data security</h3>
+Data theft is a rampant and growing area of crime – and attacks are getting bigger and more damaging.
+The bigger your data, the bigger the target it presents to criminals with the tools to steal and sell it. In the case of Target, hackers stole credit and debit card information of 40 million customers, as well as personal identifying information such as email and geographical addresses of up to 110 million people.
+	
+<h3>Data privacy</h3>
+Closely related to the issue of security is privacy. But in addition to ensuring that people’s personal data are safe from criminals, there is need to be sure that the sensitive information being stored and collected isn’t going to be divulged through less malevolent but equally damaging misuse by organization or by people to whom the organization has delegated responsibility for analyzing and reporting on it. 
+Failing to follow applicable data protection laws can lead to expensive lawsuits and even prison, depending on what sort of data you are using and the jurisdiction you are in. 
+
+<h3>Costs</h3>
+Data collection, aggregation, storage, analysis, and reporting all cost money. On top of this, there will be compliancy costs. These costs can be mitigated by careful budgeting during the planning stages, but getting it wrong at that point can lead to spiraling costs, potentially negating any value added to the organization’s bottom line of being a data-driven initiative.
+
+<h3>Bad analysis</h3>
+Misinterpreting the patterns shown by the data and drawing causal links where there is in fact merely random coincidence is an obvious pitfall. Sales data may show a rise following a major sporting event, prompting the organization to draw a link between sports fans and their products or services, when in fact the rise is based on there being more people in town, and the rise would be equally dramatic after a large live music event.
+In addition, care must be taken to avoid confirmation bias – easily imposed when an analyst comes to a project with predetermined ideas about what they are looking for and is blinded to insights from the data that go against these preconceived notions. The only way to protect against this is to ensure that the organizations are implementing all best practice procedures from top to bottom throughout your project.
+	
+<p>Misinterpreting the patterns shown by the data and drawing causal links where there is in fact merely random coincidence is an obvious pitfall. Sales data may show a rise following a major sporting event, prompting the organization to draw a link between sports fans and their products or services, when in fact the rise is based on there being more people in town, and the rise would be equally dramatic after a large live music event.
+In addition, care must be taken to avoid confirmation bias – easily imposed when an analyst comes to a project with predetermined ideas about what they are looking for and is blinded to insights from the data that go against these preconceived notions. The only way to protect against this is to ensure that the organizations are implementing all best practice procedures from top to bottom throughout your project.
+</p>
+	
+<h3>Bad Data</h3>
+<p>This usually comes down to insufficient time being spent on designing the project strategy. The big data gold rush has led to a “collect everything and think about analyzing it later” approach at many organizations. This not only adds to the growing cost of storing the data and ensuring compliance, it leads to large amounts of data that can become outdated very quickly.
+That’s just a simple checklist of the risks that every big data project needs to account for before one cent is spent on infrastructure or data collecting. Businesses of all sizes should engage wholeheartedly with big data projects. If they don’t, they run the serious risk of being left behind. But they also should be aware of the risks and enter into big data projects with their eyes wide open.</p>
+
+<h1>8.	Benefits of Big Data</h1>
+<p>As the volume of data continues to grow, its potential for business seems to be growing exponentially as Big Data management solutions evolve allowing companies to turn raw data into relevant trends, predictions, and projections with unprecedented accuracy. Companies that use comprehensive Big Data analytics solutions reap the benefits, gaining even more insights that drive intelligent decision-making. Some of the benefits of Big Data analytics include:</p>
+<ul>
+<li>Identifying the root causes of failures and issues in real time</li>
+<li>Fully understanding the potential of data-driven marketing</li>
+<li>Generating customer offers based on their buying habits</li>
+<li>Improving customer engagement and increasing customer loyalty</li>
+<li>Reevaluating risk portfolios quickly</li>
+<li>Personalizing the customer experience</li>
+<li>Adding value to online and offline customer interactions</li>
+</ul>
+	
+<h1>9.	How Big Data impacts on IT</h1>
+<ul>
+<li>85% of the data that is coming from net-new data sources such as social media, mobile applications, web and machine-generated data has greatly led to IoTs (Internet of Things)</li>
+<li>Big Data has re-invented the way online consumers purchase items and has influenced their purchase habits</li>
+<li>Big Data has been one of the biggest drivers of innovation in IT</li>
+<li>It has improved accuracy through the analysis of large data sets</li>
+<li>It has led to reduced timelines in deliverables; faster access to data from a wider indexed database, data discovery and visualization tools</li>
+<li>Real time deployment of features such as response alerts</li>
+<li>Innovations of adaptive machine learning algorithms</li>
+</ul>
+
+<h1>10.	Future of big Data</h1>
+<ul>
+<li><h3>Big data infrastructure on demand.</h3> Elastic-everything - cloud based databases and storage that scale both ways with usage, so we only buy and use what we need.</li>
+<li><h3>Big data with big processing at the edge.</h3> When data gets fast and large, the solution is not always to build bigger infrastructure to store it all. It is often to throttle the data at the source, so only interesting data is stored. With ten security cameras on all day, the answer is not watching 240 hours of footage - it is only storing data when someone is in the frame.</li>
+
+<li><h3>Big data hardware becoming commoditised</h3> in favor of smart software. Interoperability generally beats closed systems. And in the era of scalable faceless cloud based infrastructure, proprietary hardware has a bleak future.</li>
+
+<li><h3>Big data coming in new data structures.</h3> Flat files and tables will continue to be ubiquitous, but look out for a lot more spatial data, graph and network data and possibly triple stores. Not to mention the varied - often unstructured - content that resides within those data structures.</li>
+
+<li><h3>Big data enabling big analytics.</h3> Contrary to what some vendors will say, storing data (‘big’ or otherwise) is of limited value on its own. It is what is done with the data that matters. Solid, value-creating analytics can start long before big data is pristine, and the ROI of data is not driven by how big our big data clusters or datasets are. It is driven by how it is applied through a combination of intelligent applications built by analysts, data scientists, and data engineers - then consumed by analytically savvy leadership or deployed to customers and partners.</li>
+</ul>
+
+
+<h1>Contextualizing big data for Uganda situation</h1>
+<p>As technology advances, its adoptability and increased use have let to monstrous growth of data in Uganda.
+Many businesses and institutions are now grappling on how to curate or to make sense of the data.
+Big data holds a sea of precious information which includes customer behavior, market demands, changing needs, shifting preferences and more such valuable insights that could help businesses grow and adapt to the changes quickly. This could also assist the government make more precise and informed economic decisions. 
+To build this capability, Uganda Government and businesses will need to improve their network infrastructure, reinforce their analytical abilities and enhance the intelligence of business operations. To fully understand the scope of integrating big data analytics in Uganda’s framework, businesses have to look deep down within their operations, processes and databases. The Ugandan businesses should be able to pull information from the huge data pile and main focus should be relevant to their operations
+To understand the merits and confines of big data in Uganda the government and businesses will have to classify the following segments:
+</p>
+
+<h3>Historical Data</h3>
+Past records of customer interaction, whether they made purchases, whether or not they were satisfied - all of these fall under the category of historical data. Such information can be gathered from the data trail that customers leave when they interact with any company while visiting the website, spending time on various product pages or making purchases. This data acts as a way to predict the behavior and future actions of customers and citizens
+Government can invest in data gathering and analytics technology through the Uganda Communications Commission or gathering of the data from the various Internet service providers.
+
+<h3>Demographic Data</h3>
+Here the Government Businesses or institutions study the customers’ patterns of purchase, preferences, concerns and their interactions with the digital channels to better understand the nature of customers.
+
+<h3>Situational Data</h3>
+Here the Uganda Government and Businesses will have to track the location of the customers, devices used by them and their online activities to better gain an understanding of their preferences and operational times.
+These data types will help gain full context of every customer interaction. Moreover, categorizing data helps to systemize the process of data mining and comprehension so that the information can be used in the most effective manner.
+<p>Today when big data has become an essential for companies, they should be able to make sense out of it in order to utilize its benefits. Contextualization not only helps to comprehend the data in the best possible manner but it also helps in gathering and storing data in ordered groups and sequences. Once this process is in place, Uganda Government and organizations can use big data to unlock various key insights that will help them prepare their businesses for the future.</p>
+
+
+
+
+
+
+
