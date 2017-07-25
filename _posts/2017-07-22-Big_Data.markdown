@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Big Data'
-date: 2017-07-22 07:30:34 +0300
+date: 2017-07-22 07:00:34 +0300
 categories: blog development
 tags: cats dogs code
 custom_var: 'meow meow meow'
@@ -119,8 +119,8 @@ In addition, care must be taken to avoid confirmation bias – easily imposed wh
 </p>
 	
 <h3>Bad Data</h3>
-<p>This usually comes down to insufficient time being spent on designing the project strategy. The big data gold rush has led to a “collect everything and think about analyzing it later” approach at many organizations. This not only adds to the growing cost of storing the data and ensuring compliance, it leads to large amounts of data that can become outdated very quickly.
-That’s just a simple checklist of the risks that every big data project needs to account for before one cent is spent on infrastructure or data collecting. Businesses of all sizes should engage wholeheartedly with big data projects. If they don’t, they run the serious risk of being left behind. But they also should be aware of the risks and enter into big data projects with their eyes wide open.</p>
+This usually comes down to insufficient time being spent on designing the project strategy. The big data gold rush has led to a “collect everything and think about analyzing it later” approach at many organizations. This not only adds to the growing cost of storing the data and ensuring compliance, it leads to large amounts of data that can become outdated very quickly.
+That’s just a simple checklist of the risks that every big data project needs to account for before one cent is spent on infrastructure or data collecting. Businesses of all sizes should engage wholeheartedly with big data projects. If they don’t, they run the serious risk of being left behind. But they also should be aware of the risks and enter into big data projects with their eyes wide open.
 
 <h1>8.	Benefits of Big Data</h1>
 <p>As the volume of data continues to grow, its potential for business seems to be growing exponentially as Big Data management solutions evolve allowing companies to turn raw data into relevant trends, predictions, and projections with unprecedented accuracy. Companies that use comprehensive Big Data analytics solutions reap the benefits, gaining even more insights that drive intelligent decision-making. Some of the benefits of Big Data analytics include:</p>
